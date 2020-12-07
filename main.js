@@ -27,6 +27,8 @@ function showZodiac() {
     document.getElementById("form-row").innerHTML = str;
 }
 function buybuybuy() {
+    dataLayer.push({
+        "event": "GA4purchase", "GA4purchase": { "ecommerce": { "purchase": { "transaction_id": "testdebug21", "affiliation": "Online Store", "value": "20", "tax": "0", "shipping": "0", "currency": "USD", "items": [{ "item_name": "Spin 5 Laptop - SP513-52N-52PL", "item_id": "UM.HX3AA.003", "price": "149", "item_brand": "Acer_test5", "item_category": "Ordinateurs Portables", "quantity": 1, "item_coupon": "" }, { "item_name": "27\" K3 Monitor - K273 BI", "item_id": "NX.GR7AA.012", "price": "149", "item_brand": "Acer_test5", "item_category": "Ordinateurs Portables", "quantity": 1, "item_coupon": "" }, { "item_name": "test2123", "item_id": "UD.P02AA.057s", "price": "149", "item_brand": "Acer_test5", "item_category": "Ordinateurs Portables", "quantity": 1, "item_coupon": "" }, { "item_name": "Predator Orion 3000 Gaming Desktop - PO3-600-UR20", "item_id": "UD.P02AA.057", "price": "149", "item_brand": "Acer_test5", "item_category": "Ordinateurs Portables", "quantity": 1, "item_coupon": "" }] } } }
+    })
     document.location.href = "buySuccess.html";
-    console.log('aaa');
 }
